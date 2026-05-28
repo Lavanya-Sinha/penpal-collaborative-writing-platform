@@ -1,0 +1,28 @@
+.fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--primary-color);
+    color: black;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #777a;
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.fabText {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.fab:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,141 @@
+/* User Profile Page Styles */
+.profile-container {
+  max-width: 900px;
+  margin: 2.5rem auto 0 auto;
+  padding: 0 2vw 2vw 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60, 72, 88, 0.1);
+  background: red;
+  margin-bottom: 0.5rem;
+}
+
+.profile-picture-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2.5px solid #e3e8f0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.profile-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2d3a4a;
+  margin: 0;
+}
+
+.profile-email {
+  font-size: 1.08rem;
+  color: #6b7280;
+}
+
+.profile-section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3c4858;
+  margin-bottom: 0.5rem;
+}
+
+.profile-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.profile-post-card {
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(60, 72, 88, 0.08);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.profile-post-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 0.3rem 0;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.profile-post-content {
+  min-height: 60%;
+  font-size: 1.02rem;
+  color: #444;
+  margin: 0;
+  line-height: 1.6;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.profile-empty-emoji {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.profile-empty-message {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #6b7280;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem 0.7rem;
+    gap: 1rem;
+  }
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .profile-container {
+    padding: 0 0.2rem 1.2rem 0.2rem;
+    gap: 1.2rem;
+  }
+  .profile-posts {
+    gap: 0.7rem;
+  }
+  .profile-post-card {
+    padding: 1rem 0.7rem;
+    border-radius: 8px;
+  }
+}
+
+.profile-post-btn > Button {
+  width: 100%;
+}

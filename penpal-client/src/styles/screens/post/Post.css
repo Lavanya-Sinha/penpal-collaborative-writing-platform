@@ -1,0 +1,158 @@
+/* Post Page Modern & Responsive Styles */
+.postpage-root {
+  min-height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.postpage-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 2.5rem auto 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.postpage-card {
+  padding: 2rem 1.5rem;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(60, 72, 88, 0.13);
+  background: #fff;
+}
+
+.postpage-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-bottom: 12px;
+}
+
+.postpage-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e3e8f0;
+}
+
+.postpage-author {
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.postpage-profilebtn {
+  margin-left: auto;
+}
+
+.postpage-title {
+  font-family: "Lexend", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.7rem 0;
+  line-height: 1.18;
+}
+
+.postpage-content {
+  font-family: "Crimson Text", serif;
+  font-size: 1.2rem;
+  color: #222;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.postpage-comments-card {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(60, 72, 88, 0.1);
+  background: #fff;
+}
+
+.postpage-comments-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.postpage-comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.postpage-comment {
+  border: 1px solid #ddd;
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postpage-comment-content {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.postpage-deletebtn {
+  padding: 0;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.postpage-comment-user {
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 15px;
+}
+
+.postpage-comment-text {
+  color: #222;
+  font-size: 16px;
+}
+
+.postpage-replyform {
+  display: flex;
+  margin-top: 8px;
+  gap: 1em;
+}
+
+.postpage-replyinput {
+  flex: 1;
+}
+
+.postpage-replybtn {
+  min-width: 110px;
+}
+
+@media (max-width: 700px) {
+  .postpage-container {
+    max-width: 99vw;
+    padding: 0 0.2rem;
+  }
+  .postpage-card,
+  .postpage-comments-card {
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    border-radius: 10px;
+  }
+  .postpage-title {
+    font-size: 1.3rem;
+  }
+}
