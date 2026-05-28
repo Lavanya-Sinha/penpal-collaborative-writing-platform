@@ -7,7 +7,7 @@
   "test": "echo \"Error: no test specified\" && exit 1",
   "dev": "nodemon index.js",
   "init": "node src/init.js",
-  "start": "SECRET_KEY=voldamort_ki_chachi node index.js"
+  "start": "SECRET_KEY=check_this_user node index.js"
 }
 ,
   "keywords": [],
